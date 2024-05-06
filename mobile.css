@@ -1,0 +1,53 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+li {
+    list-style: none;
+}
+ul {
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+body {
+    min-height: 100vh;
+    display: grid;
+}
+.slide {
+    height: 100%;
+    width: 180px;
+    position: absolute;
+    background-color: #fff;
+    transition: 0.5s ease;
+}
+.slide h1 {
+    color: red;
+    text-align: right;
+    padding: 10px 30px;
+    pointer-events: none;
+}
+.slide a {
+    color: red;
+    padding: 0 10px;
+    text-transform: uppercase;
+    transition: 0.2s ease-out;
+}
+.slide i {
+    width: 40px;
+    color: red;
+    padding: 10px;
+}
