@@ -1,22 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Get the input element
-    var input = document.getElementById("name");
+    // Function to clear input value
+    function clearInputValue(inputId) {
+        var input = document.getElementById(inputId);
+        if (input) {
+            input.value = "";
+        }
+    }
 
-    // Clear its value
-    input.value = "";
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    // Get the input element
-    var input = document.getElementById("email");
-
-    // Clear its value
-    input.value = "";
-});
-document.addEventListener("DOMContentLoaded", function() {
-    // Get the input element
-    var input = document.getElementById("message");
-
-    // Clear its value
-    input.value = "";
+    // Clear input values
+    clearInputValue("name");
+    clearInputValue("email");
+    clearInputValue("message");
 });
