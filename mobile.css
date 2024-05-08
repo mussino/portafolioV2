@@ -36,6 +36,7 @@ a {
     src: url(./assets/fonts/Schoolbell/Schoolbell-Regular.ttf);
 }
 body {
+    width: 100%;
     min-height: 100vh;
     display: grid;
     overflow-x: hidden;
@@ -165,7 +166,6 @@ main img {
     background-color: #c2a922;
     margin: 20px auto;
     width: 350px;
-    border-radius: 20px;
     padding: 10px;
     box-shadow: 0px 5px 8px rgba(0,0,0,0.5);
 }
@@ -228,12 +228,12 @@ main img {
     background-color: #059be4;
     padding: 5px;
     margin-bottom: 20px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     box-shadow: 0px 5px 8px rgba(0,0,0,0.5);
 
 }
 .projects img {
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 .projects h4 {
     font-family: 'HK Grotesk';
@@ -285,7 +285,7 @@ main img {
     letter-spacing: 1;
     padding: 20px;
     border: 5px solid #ff0099;
-    border-radius: 50px;
+    /* border-radius: 50px; */
 }
 blockquote {
     display: block;
@@ -308,7 +308,7 @@ blockquote {
     background-color: #24345e;
     margin: 20px;
     padding: 20px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     border: 5px solid #ff0099;   
 }
 .fith-container label {
