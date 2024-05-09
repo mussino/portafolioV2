@@ -59,8 +59,9 @@ nav a {
     border-radius: 5px;
     display: flex;
     align-items: center;
-    font-family: 'HK Grotesk';
-    color: #fff;
+    font-family: 'Gagalin';
+    font-weight: lighter;
+    color: #24345e;
 
     &:hover {
         background-color: #059be4;
@@ -69,7 +70,7 @@ nav a {
 }
 #toggleBtn {
     fill: #c2a922;
-
+    height: auto;
 }
 .sidebar {
     position: fixed;
@@ -86,16 +87,21 @@ nav a {
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-start;
+    font-size: 4em;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1));
 }
 .sidebar li {
     width: 100%;
+    height: auto;
 }
 .sidebar a {
     width: 100%;
 }
 #xclose {
     width: auto;
+    height: auto;
     fill: #fff;
+    padding: 20px 0;
 }
 .hideOnMobile {
     display: none;
