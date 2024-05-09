@@ -1,6 +1,28 @@
-@media (min-width: 600px) {
-    .second-container {
-        max-width: 90%;
-        margin: 0 auto;
+@media (min-width: 1200px) {
+    .hideOnMobile {
+        display: flex;
     }
+    #toggleBtn {
+        display: none;
+    }
+    .first-container {
+        height: 85vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .first-container h1 {
+        font-size: 7em;
+        margin-top: 0;
+    }
+    .first-container h2 {
+        grid-area: 2 / 1;
+        font-size: 3.5em;
+    }
+    .first-container img {
+        height: 100%;
+        grid-row: 1 / 3;
+    }
+
 }

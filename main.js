@@ -12,3 +12,20 @@ document.addEventListener("DOMContentLoaded", function() {
     clearInputValue("email");
     clearInputValue("message");
 });
+
+const toggleBtn = document.getElementById('toggleBtn')
+const sideBar = document.querySelector('.sidebar')
+const xclose = document.getElementById('xclose')
+
+toggleBtn.onclick = showSidebar
+
+function showSidebar() {
+    sideBar.style.display = 'flex'
+}
+
+
+function hideSidebar() {
+    sideBar.style.display = 'none'
+}
+
+xclose.onclick = hideSidebar
