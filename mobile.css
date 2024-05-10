@@ -246,7 +246,7 @@ nav a {
     scroll-padding-inline: 1rem;
 }
 .snaps-inline > * {
-    scroll-snap-align: start;
+    scroll-snap-align: center;
 }
 
 .projects h4 {
