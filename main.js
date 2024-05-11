@@ -9,6 +9,18 @@ const sidebarContact = document.querySelector('#sidebar-contact')
 
 
 
+
+const orderSummaryPageView = document.getElementById('orderSummaryPageView')
+const orderSummaryCodeView = document.getElementById('orderSummaryCodeView')
+
+
+// https://recipepagemainfrontend.netlify.app 
+// https://github.com/mussino/recipePageMain
+
+
+// https://socialproofpage.netlify.app
+// https://github.com/mussino/socialProofPage
+
 toggleBtn.onclick = showSidebar
 xclose.onclick = hideSidebar
 sidebarWelcome.onclick = hideSidebar
@@ -16,7 +28,6 @@ sidebarSkills.onclick = hideSidebar
 sidebarPortfolio.onclick = hideSidebar
 sidebarAbout.onclick = hideSidebar
 sidebarContact.onclick = hideSidebar
-
 
 
 
@@ -44,3 +55,15 @@ document.addEventListener("DOMContentLoaded", function() {
     clearInputValue("email");
     clearInputValue("message");
 });
+
+
+
+// Links for website projects
+
+orderSummaryPageView.addEventListener('click', function() {
+    window.location.href = 'https://summaryorderapp.netlify.app/'
+})
+orderSummaryCodeView.addEventListener('click', function() {
+    window.location.href = 'https://github.com/mussino/orderSummary'
+    
+} )
