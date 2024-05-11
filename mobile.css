@@ -58,37 +58,39 @@ nav a {
     padding: 0 30px;
     border-radius: 5px;
     display: flex;
+    justify-content: right;
     align-items: center;
-    font-family: 'Gagalin';
-    font-weight: lighter;
-    color: #24345e;
+    font-family: 'HK Grotesk';
+    font-weight: 900;
+    color: #059be4;
 
     &:hover {
-        background-color: #059be4;
-        opacity: .5;
+        background-color: #fff;
+        opacity: .6;
     }
 }
 #toggleBtn {
-    fill: #c2a922;
+    fill: #059be4;
     height: auto;
 }
 .sidebar {
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
-    width: 100%;
+    height: 80vh;
+    width: 90%;
     z-index: 1000;
-    background-color: #c2aa226a;
+    background-color: #00000086;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     box-shadow: 10px 0 -10px rgba(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: flex-start;
-    font-size: 4em;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1));
+    justify-content: space-around;
+    font-size: 3em;
+    border-radius: 0 0 20px 0;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 }
 .sidebar li {
     width: 100%;
@@ -100,29 +102,29 @@ nav a {
 #xclose {
     width: auto;
     height: auto;
-    fill: #fff;
+    fill: #c2a922;
     padding: 20px 0;
 }
 .hideOnMobile {
     display: none;
 }
-.first-container {
+.main-container {
     width: 100%;
     height: 100%;
     background-image: url(./assets/pics/100blurAbstractArt.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 30% 70%;
+    background-position: center;
 }
-.first-container h1 {
+.main-container h1 {
     padding: 40px 0;
     font-family: 'Gagalin';
     text-align: center;
     font-size: 4em;
     font-weight: 100;
-    color: #2c2a31;
+    color: #d0d2d1;
 }
-.first-container h2 {
+.main-container h2 {
     padding: 40px 0;
     font-family: 'HK Grotesk';
     font-weight: 900;
@@ -131,20 +133,21 @@ nav a {
     letter-spacing: 10px;
     color: #d0d2d1;
 }
-.first-container img {
+.main-container img {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
-.second-container h3, .third-container h3, .fourth-container h3, .fith-container h3 {
+/* Skills Section */
+.skills-container h3, .about-container h3, .contact-container h3 {
     font-family: 'Gagalin';
     font-weight: 100;
-    font-size: 4em;
-    color: #2c2a31;
+    font-size: 2.5em;
+    color: #24345e;
     text-align: center;
     padding: 20px 10px;
 }
-.second-container p, .fourth-container p {
+.skills-container p, .about-container p {
     font-family: 'HK Grotesk';
     font-weight: 300;
     line-height: 1.5;
@@ -189,11 +192,12 @@ nav a {
 .indent {
     text-indent: 20px;
 }
-.second-container .logos {
-    width: 100px;
-    height: 100px;
+.skills-container .logos {
+    width: 50px;
+    height: 50px;
+    opacity: .7;
 }
-.second-container div {
+.skills-container div {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -203,44 +207,61 @@ nav a {
     flex-wrap: wrap;
     padding: 20px;
 }
-.third-container {
-    background-color: #2c2a31;
+
+/* Portfolio Section */
+.portfolio-container {
+    height: 90vh;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
 }
-.third-container h3, .fith-container h3 {
-    color: #fff;
-    text-shadow: 0px 5px 8px rgba(0,0,0,0.5);
+.portfolio-container h3 {
+    font-family: 'Gagalin';
+    font-weight: 100;
+    font-size: 2.5em;
+    color: #24345e;
+    text-align: center;
+    padding: 20px 10px;
 }
-.third-container p {
+.portfolio-container p {
     margin-top: -15px;
     text-align: center;
     font-family: 'Schoolbell';
-    color: #fff;
+    color: #2c2a31;
     opacity: .6;
-    font-size: 1.2em;
+    font-size: 1.5em;
     letter-spacing: 1px;
+    padding: 0 20px;
 }
 .port-containers {
-    padding: 20px;
+    padding: 0 10px;
     display: grid;
-    gap: 20px;
+    gap: 10px;
     grid-auto-flow: column;
-    grid-auto-columns: 91%;
+    grid-auto-columns: 94%;
     max-width: 90vw;
-    margin: 0 auto;
+    margin: 40px auto;
     overflow-x: auto;
+    /* Hide the scrollbar for mozzilla */
+    scrollbar-width: none;
     overscroll-behavior-inline: contain;
+}
+.port-containers::-webkit-scrollbar {
+    display: none;
 }
 .projects {
     display: grid;
     gap: 2px;
     grid-template-rows: min-content;
-    border-radius: 5px;
+    border-radius: 20px;
     margin: 0 auto;
     background-color: #059be4;
-    padding: 15px;
+    padding: 0 10px;
     margin-bottom: 20px;
     box-shadow: 0px 5px 8px rgba(0,0,0,0.5);
 }
+
+/* To Make the Portfolio Section scroll to horizontal */
 .snaps-inline {
     scroll-snap-type: inline mandatory;
     scroll-padding-inline: 1rem;
@@ -248,57 +269,56 @@ nav a {
 .snaps-inline > * {
     scroll-snap-align: center;
 }
-
 .projects h4 {
     font-family: 'HK Grotesk';
-    font-size: 1.2em;
-    font-weight: 500;
-    padding: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 400;
+    padding: 15px 10px;
     color: #fff;
 
 }
+.projects img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+    margin-top: 10px;
+}
 .projects p {
+    margin: 0;
     font-family: 'HK Grotesk';
-    font-size: 0.875em;
-    font-weight: 300;
-    padding: 10px;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 10px 5px;
     text-align: left;
     color: #fff;
 }
+.btn-con {
+    display: grid;
+    grid-auto-flow: column;
+}
 .projects button {
-    display: block;
-    margin: 15px auto;
+    margin: 20px auto;
     width: 80%;
+    height: auto;
     max-width: 400px;
     font-size: 1em;
     font-weight: 400;
     background-color: #24345e;
     border: none;
-    border-radius: 50px;
-    padding: 5px 0;
-    color: #d0d2d1;
+    border-radius: 100px;
+    color: #fff;
     font-family: 'HK Grotesk';
     letter-spacing: 1.5px;
+    padding: 10px 0;
 }
 .projects button:last-child {
-    color: #c2a922;
+    background-color: inherit;
+    border: 1px solid #24345e;
+    color: #fff;
 }
-.more-btn {
-    display: block;
-    margin: 20px auto 40px auto;
-    letter-spacing: 2px;
-    font-family: 'HK Grotesk';
-    font-size: 1rem;
-    font-weight: 300;
-    color: #ffffff;  
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    background-color: #059be4;
-}
-.fourth-container img {
+.about-container img {
     padding: 20px 0;
 }
 blockquote {
@@ -309,17 +329,28 @@ blockquote {
     color: #24345e;
     font-style: italic;
 }
-.fith-container {
+/* Contact Section */
+.contact-container {
     background-image: url(./assets/pics/Designer-9.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
-.fith-container .slogan {
+.contact-container h3 {
+    font-family: 'Gagalin';
+    font-weight: 100;
+    font-size: 2.5em;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    text-shadow: 5px 0px 8px rgba(0,0,0,0.5);
+}
+.contact-container .slogan {
     width: 90%;
-    margin: 20px auto;
-    background-color: #191919c4;
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
+    margin: 10px auto 40px auto;
+    background-color: #19191996;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
     color: #fff;
     font-family: 'HK Grotesk';
     font-size: 1em;
@@ -328,9 +359,9 @@ blockquote {
     letter-spacing: 1px;
     padding: 20px;
     border: 5px solid #ff0099;
-    border-radius: 50px 0 50px 0;
+    border-radius: 20px;
 }
-.fith-container form {
+/* .contact-container form {
     width: 90%;
     max-width: 400px;
     font-family: 'HK Grotesk';
@@ -344,23 +375,23 @@ blockquote {
     border: 5px solid #ff0099; 
     border-radius: 50px 0 50px 0;
 }
-.fith-container label {
+.contact-container label {
     padding: 5px;
     font-size: 1em;
 }
-.fith-container form .input-form {
+.contact-container form .input-form {
     display: flex;
     flex-direction: column;
     color: #fff;
 }
-.fith-container form .input-form input, textarea {
+.contact-container form .input-form input, textarea {
     font-size: 1em;
     padding: 15px;
     background-color: #d0d2d1;
     border: none;
     resize: none;
 }
-.fith-container form p {
+.contact-container form p {
     text-align: center;
     font-size: .65em;
     font-style: italic;
@@ -368,10 +399,10 @@ blockquote {
     color: #d0d2d1;
     padding: 10px;
 }
-.fith-container form p a {
+.contact-container form p a {
     color: #c2a922;
 }
-.fith-container form .blue-btn {
+.contact-container form .blue-btn {
     display: block;
     width: 80%;
     margin: 20px auto;
@@ -381,7 +412,7 @@ blockquote {
     padding: 10px 0;
     color: #fff;
     letter-spacing: 2px;
-}
+} */
 footer {
     padding: 40px;
     text-align: center;
@@ -404,7 +435,7 @@ footer p:first-child {
 }
 footer .frontEnd img {
     display: block;
-    width: 50%;
+    width: 80%;
     height: auto;
     margin: 0 auto;
     padding: 20px;
