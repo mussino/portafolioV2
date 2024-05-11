@@ -19,11 +19,12 @@
             </ul>
             <ul class="desktop">
                 <li id="toggleBtn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="40px"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg></a></li>
-                <li class="hideOnMobile"><a href="#">Welcome</a></li>
-                <li class="hideOnMobile"><a href="#">Skills</a></li>
-                <li class="hideOnMobile"><a href="#">Portfolio</a></li>
-                <li class="hideOnMobile"><a href="#">About</a></li>
-                <li class="hideOnMobile"><a href="#">Contact</a></li>
+                <li id="sidebar-welcome" class="hideOnMobile"><a href="#welcome">Welcome</a></li>
+                <li id="sidebar-skills" class="hideOnMobile"><a href="#skills">Skills</a></li>
+                <li id="sidebar-portfolio" class="hideOnMobile"><a href="#portfolio">Portfolio</a></li>
+                <li id="sidebar-about" class="hideOnMobile"><a href="#about">About</a></li>
+                <li id="sidebar-contact" class="hideOnMobile"><a href="#contact">Contact</a></li>
+                
                 
             </ul>
         </nav> 
@@ -214,16 +215,14 @@
 
 
     <footer>
-        
-        
+
+        <article>
             <p>Mailing Address</p>
             <p>Shanghai, China PR.</p>
-        
-            <a class="frontEnd" href="https://www.frontendmentor.io/profile/mussino" target="_blank"><img src="./assets/icons/frontend-mentor-seeklogo.svg" alt="frontend-mentor-seeklogo"></a>
+        </article>
             
         <div class="footer-logos">
-           
-            
+            <a href="https://www.frontendmentor.io/profile/mussino" target="_blank"><img id="git" src="./assets/icons/frontend-mentor-seeklogo.svg" alt="frontend-mentor-seeklogo"></a>
             
             <a href="https://github.com/mussino" target="_blank"><img src="./assets/icons/icons8-github-384.png" alt=""></a>
             
@@ -234,6 +233,7 @@
         
         
         <p class="goodbye">Copyright 2024. All rights reserved.</p>
+    
     </footer>
 
     <script src="main.js"></script>
