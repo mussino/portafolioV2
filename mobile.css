@@ -39,12 +39,13 @@ body {
     min-height: 100vh;
     display: grid;
     width: 100%;
+    font-family: 'HK Grotesk';
+    font-size: 1em;
 }
 nav {
     position: fixed;
     width: 100%;
     height: auto;
-    padding: 10px 0;
     top: 0;
     background-color: #ffffffc1;
     -webkit-backdrop-filter: blur(5px);
@@ -67,7 +68,6 @@ nav a {
     display: flex;
     justify-content: right;
     align-items: center;
-    font-family: 'HK Grotesk';
     font-weight: 900;
     color: #059be4;
 
@@ -129,12 +129,11 @@ nav a {
     color: #d0d2d1;
 }
 .main-container h2 {
-    padding: 40px 0;
-    font-family: 'HK Grotesk';
-    font-weight: 900;
+    padding: 40px;
+    /* font-weight: 900; */
     font-size: 2em;
     text-align: center;
-    letter-spacing: 10px;
+    letter-spacing: 2px;
     color: #d0d2d1;
 }
 .main-container img {
@@ -150,7 +149,7 @@ nav a {
     border-top: 10px solid #000;
 }
 .skills-container h3, .about-container h3, .contact-container h3 {
-    font-family: 'Gagalin';
+    /* font-family: 'Gagalin'; */
     font-weight: 100;
     font-size: 2.5em;
     color: #24345e;
@@ -158,8 +157,6 @@ nav a {
     padding: 20px 10px;
 }
 .skills-container p, .about-container p {
-    font-size: 1em;
-    font-family: 'HK Grotesk';
     font-weight: 300;
     line-height: 1.5;
     letter-spacing: .9px;
@@ -184,9 +181,7 @@ nav a {
     border: 2px solid #24345e;
 }
 .brand-me p {
-    font-family: 'HK Grotesk';
     font-weight: 300;
-    font-size: 1em;
     text-align: left;
     line-height: 1.2;
     letter-spacing: 1px;
@@ -196,7 +191,7 @@ nav a {
     line-height: .65;
     font-size: 6em;
     float: left;
-    font-family: "Gagalin";
+    /* font-family: "Gagalin"; */
     font-weight: lighter;
     color: #24345e;
 }
@@ -229,7 +224,7 @@ nav a {
     background-color: #fff;
 }
 .portfolio-container h3 {
-    font-family: 'Gagalin';
+    /* font-family: 'Gagalin'; */
     font-weight: 100;
     font-size: 2.5em;
     color: #24345e;
@@ -237,10 +232,9 @@ nav a {
 }
 .portfolio-container p {
     text-align: center;
-    font-family: 'Schoolbell';
+    /* font-family: 'Schoolbell'; */
     color: #2c2a31;
     opacity: .6;
-    font-size: 1.2em;
     letter-spacing: 1px;
     padding: 0 20px;
 }
@@ -261,7 +255,7 @@ nav a {
     display: none;
 }
 .projects {
-    height: 415px;
+    height: auto;
     display: grid;
     gap: 2px;
     grid-template-rows: min-content;
@@ -282,7 +276,6 @@ nav a {
     scroll-snap-align: center;
 }
 .projects h4 {
-    font-family: 'HK Grotesk';
     font-size: 1.5em;
     text-align: center;
     font-weight: 400;
@@ -299,8 +292,6 @@ nav a {
 }
 .projects p {
     margin: 0;
-    font-family: 'HK Grotesk';
-    font-size: 1em;
     font-weight: 400;
     padding: 10px 5px;
     text-align: left;
@@ -315,13 +306,11 @@ nav a {
     width: 80%;
     height: auto;
     max-width: 400px;
-    font-size: 1em;
     font-weight: 400;
     background-color: #24345e;
     border: none;
     border-radius: 100px;
     color: #fff;
-    font-family: 'HK Grotesk';
     letter-spacing: 1.5px;
     padding: 10px 0;
 }
@@ -356,7 +345,7 @@ blockquote {
     height: 80vh;
 }
 .contact-container h3 {
-    font-family: 'Gagalin';
+    /* font-family: 'Gagalin'; */
     font-weight: 100;
     font-size: 2.5em;
     color: #fff;
@@ -371,8 +360,6 @@ blockquote {
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     color: #fff;
-    font-family: 'HK Grotesk';
-    font-size: 1em;
     font-style: italic;
     line-height: 1.5;
     letter-spacing: 1px;
@@ -384,7 +371,6 @@ blockquote {
     width: 90%;
     max-width: 400px;
     font-family: 'HK Grotesk';
-    font-size: 1em;
     text-decoration: none;
     background-color: #24345ead;
     margin: 40px auto;
@@ -396,7 +382,6 @@ blockquote {
 }
 .contact-container label {
     padding: 5px;
-    font-size: 1em;
 }
 .contact-container form .input-form {
     display: flex;
@@ -404,7 +389,6 @@ blockquote {
     color: #fff;
 }
 .contact-container form .input-form input, textarea {
-    font-size: 1em;
     padding: 15px;
     background-color: #d0d2d1;
     border: none;
@@ -412,7 +396,6 @@ blockquote {
 }
 .contact-container form p {
     text-align: center;
-    font-size: .65em;
     font-style: italic;
     line-height: 1.5;
     color: #d0d2d1;
@@ -440,7 +423,6 @@ footer {
     text-align: center;
 }
 footer p {
-    font-family: 'HK Grotesk';
     padding: 5px;
     font-weight: 400;
 }
@@ -468,6 +450,6 @@ footer img {
 footer .goodbye {
     font-size: .875em;
     padding: 0;
-    font-family: 'Schoolbell';
+    /* font-family: 'Schoolbell'; */
 
 }

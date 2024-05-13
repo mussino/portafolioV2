@@ -61,9 +61,8 @@ document.addEventListener("DOMContentLoaded", function() {
 // Links for website projects
 
 orderSummaryPageView.addEventListener('click', function() {
-    window.location.href = 'https://summaryorderapp.netlify.app/'
+    window.open('https://summaryorderapp.netlify.app', '_blank');
 })
 orderSummaryCodeView.addEventListener('click', function() {
-    window.location.href = 'https://github.com/mussino/orderSummary'
-    
+    window.open('https://github.com/mussino/orderSummary', '_blank');
 } )

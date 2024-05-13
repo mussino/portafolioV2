@@ -1,6 +1,7 @@
 @media (min-width: 1200px) {
     .desktop {
-        justify-content: space-evenly;
+        justify-content: center;
+        gap: 60px;
     }
     .desktop ul {
         
@@ -38,6 +39,7 @@
     }
     .main-container img {
         object-fit: cover;
+        object-position: 75% 25%;
         height: 100%;
         grid-row: 1 / span 2;
     }
@@ -73,12 +75,11 @@
         margin: 40px auto;
     }
     .port-containers {
-       max-width: 1400px;
-       grid-template-columns: repeat(4, 1fr);
-       grid-auto-flow: row;
-       gap: 20px;
-       padding: 0;
-       margin: 40px auto;
+        max-width: 50%;
+        gap: 2 0px;
+        padding: 40px;
+        margin: 40px auto;
+        scrollbar-width: auto;
     }
     .projects {
         margin-bottom: 0;
