@@ -206,7 +206,7 @@ nav a {
     align-items: center;
     background-color: #c2a922;
     min-width: 280px;
-    max-width: 380px;
+    max-width: 300px;
     box-shadow: 0px 5px 8px rgba(0,0,0,0.5);
     border-radius: 5px;
     margin: 0 auto;
@@ -215,7 +215,6 @@ nav a {
     width: 100px;
     height: 100px;
     border-radius: 5px;
-    
 }
 .brand-me p {
     margin-left: 5px;
@@ -225,9 +224,6 @@ nav a {
     text-align: left;
     color: #24345e;
 }
-
-
-
 /* Portfolio Section */
 .portfolio-container {
     width: 100%;
@@ -350,11 +346,11 @@ nav a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 30px 20px;
 }
 .contact-container h3 {
     width: 100%;
@@ -364,7 +360,7 @@ nav a {
     text-shadow: 2px 10px 10px #000000;
 }
 .contact-container .slogan {
-    width: 80%;
+    width: 90%;
     max-width: 400px;
     margin: 0 auto;
     padding: 10px;
@@ -374,11 +370,13 @@ nav a {
     -webkit-backdrop-filter: blur(2px);
     color: #fff;
     font-style: italic;
-    line-height: 1.5;
+    line-height: 1.2;
     letter-spacing: 1px;
     border: 5px solid #ff0099;
+    border-radius: 20px;
+    text-shadow: 2px 10px 10px #000000;
 }
-/* .contact-container form {
+.contact-container form {
     width: 90%;
     max-width: 400px;
     font-family: 'HK Grotesk';
@@ -389,7 +387,7 @@ nav a {
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
     border: 5px solid #ff0099; 
-    border-radius: 50px 0 50px 0;
+    border-radius: 20px;
 }
 .contact-container label {
     padding: 5px;
@@ -407,8 +405,9 @@ nav a {
 }
 .contact-container form p {
     text-align: center;
+    font-size: 0.675em;
     font-style: italic;
-    line-height: 1.5;
+    line-height: 1.2;
     color: #d0d2d1;
     padding: 10px;
 }
@@ -425,7 +424,8 @@ nav a {
     padding: 10px 0;
     color: #fff;
     letter-spacing: 2px;
-} */
+}
+/* Footer Section */
 footer {
     background-color: #fff;
     display: flex;
@@ -463,6 +463,4 @@ footer img {
 footer .goodbye {
     font-size: .875em;
     padding: 20px;
-    /* font-family: 'Schoolbell'; */
-
 }
