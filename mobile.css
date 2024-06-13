@@ -206,7 +206,7 @@ nav a {
     align-items: center;
     background-color: #c2a922;
     min-width: 280px;
-    max-width: 300px;
+    max-width: 400px;
     box-shadow: 0px 5px 8px rgba(0,0,0,0.5);
     border-radius: 5px;
     margin: 0 auto;
@@ -214,10 +214,10 @@ nav a {
 .brand-me img {
     width: 100px;
     height: 100px;
-    border-radius: 5px;
+    border-radius: 10px;
+    padding: 5px;
 }
 .brand-me p {
-    margin-left: 5px;
     padding: 0 10px;
     font-size: 1.2em;
     font-weight: 300;
